@@ -9,7 +9,7 @@ const filterUserForClient = (user: User) => {
   return {
     id: user.id, 
     username: user.username, 
-    profilePicture: user.profileImageUrl
+    profilePicture: user.imageUrl
   }
 }
 
