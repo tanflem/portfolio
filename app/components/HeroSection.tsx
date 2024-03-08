@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
@@ -7,7 +9,26 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <div className="text-transparent">Hello I'm </div>
+            <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              Hello I'm{" "}
+            </div>
+            <TypeAnimation
+              sequence={[
+                "Developer",
+                1000,
+                "Designer",
+                1000,
+                "Freelancer",
+                1000,
+                "Tanner",
+                1000,
+              ]}
+              speed={50}
+              wrapper="span"
+              cursor={false}
+              repeat={Infinity}
+              style={{ fontSize: "3rem", display: "inline-block" }}
+            />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
@@ -19,8 +40,10 @@ const HeroSection = () => {
             <button className="px-6 py-3 w-full sm:w-fit  rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200">
               Hire Me
             </button>
-            <button className="px-6 py-3 w-full sm:w-fit  rounded-full bg-transparent hover:bg-slate-800 border border-white mt-3">
-              Download Resume
+            <button className="px-1 py-1 w-full sm:w-fit  rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 mt-3">
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Download
+              </span>
             </button>
           </div>
         </div>
