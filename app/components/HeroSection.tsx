@@ -7,19 +7,19 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            {`Hello I'm Tanner`}
+            <div className="text-transparent">Hello I'm </div>
           </h1>
-          <p className="text-white text-lg lg:text-xl mb-6">
+          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
             neque accusantium minus beatae nesciunt cupiditate veritatis
             repudiandae. Illo id expedita pariatur, blanditiis soluta nam
             ducimus, voluptatem officiis illum, dolorum voluptas.
           </p>
           <div>
-            <button className="px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black">
+            <button className="px-6 py-3 w-full sm:w-fit  rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200">
               Hire Me
             </button>
-            <button className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
+            <button className="px-6 py-3 w-full sm:w-fit  rounded-full bg-transparent hover:bg-slate-800 border border-white mt-3">
               Download Resume
             </button>
           </div>
