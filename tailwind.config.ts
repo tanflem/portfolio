@@ -16,8 +16,8 @@ const config: Config = {
       },
       colors: {
         ...colors,
-        primary: colors.purple,
-        secondary: colors.pink,
+        primary: colors.emerald,
+        secondary: colors.indigo,
       },
     },
   },
