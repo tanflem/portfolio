@@ -7,6 +7,8 @@ const PROJECTS = [
         title: "Project 1",
         description: "This is a project that I worked on",
         imgUrl: "/images/profile.jpg",
+        gitUrl: "https://github.com",
+        previewUrl: "https://github.com",
         tag: ["All", "Web"]
     },
     {
@@ -14,6 +16,17 @@ const PROJECTS = [
         title: "Project 2",
         description: "This is a project that I worked on",
         imgUrl: "/images/projects/2.webp",
+        gitUrl: "https://github.com",
+        previewUrl: "https://github.com",
+        tag: ["All", "Web"]
+    },
+    {
+        id: 3,
+        title: "Senior Design USAF Dashboard",
+        description: "This is a project that I worked on",
+        imgUrl: "/images/projects/3.png",
+        gitUrl: "https://github.com",
+        previewUrl: "https://github.com",
         tag: ["All", "Web"]
     }
 ]
@@ -29,6 +42,8 @@ const ProjectSection = () => {
                         title={project.title}
                         description={project.description}
                         imgUrl={project.imgUrl}
+                        gitUrl={project.gitUrl}
+                        previewUrl={project.previewUrl}
                     />
                 ))}
             </div>
